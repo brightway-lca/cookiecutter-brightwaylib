@@ -1,0 +1,23 @@
+{
+  "full_name": "Tomás NAVARRETE GUTIÉRREZ",
+  "email": "tngTUDOR@users.noreply.github.com",
+  "github_username": "tngTUDOR",
+  "project_name": "Brightway library",
+  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_short_description": "Contains all the python boilerplate you need to create a Brightway ecosystem package.",
+  "pypi_username": "{{ cookiecutter.github_username }}",
+  "version": "0.1.0",
+  "use_pytest": "y",
+  "use_black": "y",
+  "add_pyup_badge": "n",
+  "command_line_interface": ["Click", "No command-line interface"],
+  "create_author_file": "y",
+  "open_source_license": [
+    "MIT license",
+    "BSD license",
+    "ISC license",
+    "Apache Software License 2.0",
+    "GNU General Public License v3"
+  ],
+  "_copy_without_render": [".github/*"]
+}
