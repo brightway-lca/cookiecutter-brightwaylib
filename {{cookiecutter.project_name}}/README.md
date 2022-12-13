@@ -24,7 +24,7 @@
 You can install _{{cookiecutter.package_name}}_ via [pip] from [PyPI]:
 
 ```console
-$ pip install {{cookiecutter.project_name}}
+$ pip install {{cookiecutter.package_name}}
 ```
 
 ## Contributing
