@@ -40,12 +40,19 @@ Request features on the [Issue Tracker].
 Install the package with development requirements:
 
 ```console
-$ pip install -e .
+$ pip install -e ".[dev]"
 ```
 
 ## How to test the project
 
-Run the full test suite:
+
+1. Install the package with development requirements:
+
+```console
+$ pip install -e ".[testing]"
+```
+
+2. Run the full test suite:
 
 ```console
 $ pytest
