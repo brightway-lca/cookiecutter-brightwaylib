@@ -1,0 +1,20 @@
+{
+  "full_name": "Tomás NAVARRETE GUTIÉRREZ",
+  "email": "tngTUDOR@users.noreply.github.com",
+  "github_username": "brightway-lca",
+  "project_name": "Brightway library",
+  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_short_description": "Contains all the python boilerplate you need to create a Brightway ecosystem package.",
+  "version": "0.1.0",
+  "use_pytest": "y",
+  "command_line_interface": ["Click", "No command-line interface"],
+  "open_source_license": [
+    "MIT license",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "BSD license",
+    "ISC license"
+  ],
+  "copyright_year": 2022,
+  "_copy_without_render": [".github/*"]
+}

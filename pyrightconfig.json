@@ -1,0 +1,10 @@
+{
+  "include": [
+	  {{cookiecutter.package_name}} 
+  ],
+  
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__"
+  ]
+}
