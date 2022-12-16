@@ -1,3 +1,5 @@
+"""{{cookiecutter.package_name}}."""
+
 from pathlib import Path
 from typing import Union
 
