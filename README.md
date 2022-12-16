@@ -1,14 +1,18 @@
 # cookiecutter-brightwaylib
 
-A cookiecutter based project template for Brightway ecosystem packages.
+A [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/index.html) based project template for Brightway ecosystem packages.
 
-# Usage
+# [Usage](https://cookiecutter.readthedocs.io/en/stable/usage.html)
 
-This is a cookiecutter based template to create Brightway ecosystem packages.
-The regular usage instructions from cookiecutter apply:
+1. Create a new environment (pip or conda), activate it, and install `cookiecutter`
+2. Download (i.e. don't install via pip or conda) this repository, either directly or via git
+3. Edit the `cookiecutter.json` file to give your personal info. You should update at least:
 
-1. Install cookiecutter
-2. Invoke cookiecutter passing either this repository as URL or a cloned local directory.
+* "full_name"
+* "email"
+* "github_username"
+
+4. Invoke cookiecutter *in the parent directory of `cookiecutter-brightwaylib`*
 
 ```
 cookiecutter cookiecutter-brightwaylib/
