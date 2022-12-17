@@ -1,8 +1,8 @@
 {
-  "full_name": "Tomás NAVARRETE GUTIÉRREZ",
-  "email": "tngTUDOR@users.noreply.github.com",
+  "full_name": "<your name here>",
+  "email": "<your email here>",
   "github_username": "brightway-lca",
-  "project_name": "Brightway library",
+  "project_name": "<your project library name>",
   "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "Contains all the python boilerplate you need to create a Brightway ecosystem package.",
   "version": "0.1.0",
