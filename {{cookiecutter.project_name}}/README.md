@@ -27,6 +27,18 @@ You can install _{{cookiecutter.package_name}}_ via [pip] from [PyPI]:
 $ pip install {{cookiecutter.package_name}}
 ```
 
+## Documentation building locally
+
+Make sure you have installed the `dev` and `doc` extras of the package: `pip install ".[dev,docs]"`.
+
+Build the documentation providing the `docs` directory at the root of the project as the source
+and specifying the output directory.
+
+```
+# use docs as source and docs/_build as output
+sphinx-build docs docs/_build
+```
+
 ## Contributing
 
 Contributions are very welcome.
@@ -43,8 +55,8 @@ If you encounter any problems,
 please [file an issue] along with a detailed description.
 
 
-## Credits
+<!-- github-only -->
 
-
+[command-line reference]: https://{{cookiecutter.project_name}}.readthedocs.io/en/latest/usage.html
 [license]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/blob/main/LICENSE
 [contributor guide]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/blob/main/CONTRIBUTING.md
