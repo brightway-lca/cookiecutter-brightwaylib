@@ -6,15 +6,11 @@ welcomes contributions in the form of bug reports, feature requests, and pull re
 
 Here is a list of important resources for contributors:
 
+- [Code of Conduct]
+- [License]
 - [Source Code]
 - [Documentation]
 - [Issue Tracker]
-- [Code of Conduct]
-
-[{{cookiecutter.open_source_license.replace("-", " ").lower()}} license]: https://opensource.org/licenses/{{cookiecutter.open_source_license}}
-[source code]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}
-[documentation]: https://{{cookiecutter.project_name}}.readthedocs.io/
-[issue tracker]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/issues
 
 ## How to report a bug
 
@@ -93,7 +89,12 @@ It is recommended to open an issue before starting work on anything.
 This will allow a chance to talk it over with the owners and validate your approach.
 
 [pull request]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/pulls
+[License]: https://opensource.org/licenses/{{cookiecutter.open_source_license}}
+[Source Code]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}
+[Documentation]: https://{{cookiecutter.project_name}}.readthedocs.io/
+[Issue Tracker]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/issues
+
 
 <!-- github-only -->
 
-[code of conduct]: CODE_OF_CONDUCT.md
+[Code of Conduct]: CODE_OF_CONDUCT.md

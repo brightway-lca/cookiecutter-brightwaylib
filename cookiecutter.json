@@ -9,11 +9,11 @@
   "use_pytest": "y",
   "command_line_interface": ["Click", "No command-line interface"],
   "open_source_license": [
-    "MIT license",
-    "Apache Software License 2.0",
-    "GNU General Public License v3",
-    "BSD license",
-    "ISC license"
+    "MIT",
+    "Apache-2.0",
+    "GPL-3.0",
+    "BSD-3-Clause",
+    "ISC"
   ],
   "copyright_year": 2022,
   "_copy_without_render": [".github/*"]
