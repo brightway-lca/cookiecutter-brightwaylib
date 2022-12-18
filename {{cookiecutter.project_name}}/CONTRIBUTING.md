@@ -39,6 +39,18 @@ Install the package with development requirements:
 $ pip install -e ".[dev]"
 ```
 
+## How to build the documentation locally
+
+Make sure you have installed the `dev` and `docs` extras of the package: `pip install ".[dev,docs]"`.
+
+Build the documentation providing the `docs` directory at the root of the project as the source
+and specifying the output directory.
+
+```
+# use docs as source and docs/_build as output
+sphinx-build docs docs/_build
+```
+
 ## How to test the project
 
 
