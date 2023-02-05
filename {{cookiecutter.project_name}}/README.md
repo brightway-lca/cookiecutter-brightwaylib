@@ -40,7 +40,7 @@ _{{cookiecutter.package_name}}_ is free and open source software.
 ## Issues
 
 If you encounter any problems,
-please [file an issue] along with a detailed description.
+please [file an issue][issue tracker] along with a detailed description.
 
 
 <!-- github-only -->
@@ -48,3 +48,4 @@ please [file an issue] along with a detailed description.
 [command-line reference]: https://{{cookiecutter.project_name}}.readthedocs.io/en/latest/usage.html
 [license]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/blob/main/LICENSE
 [contributor guide]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/blob/main/CONTRIBUTING.md
+[issue tracker]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/issues

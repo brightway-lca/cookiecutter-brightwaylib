@@ -1,5 +1,11 @@
 # cookiecutter-brightwaylib Changelog
 
+## [0.1.6] - 2023-02-05
+
+### Fixed 
+
++ Add missing reference to file issues.
+
 ## [0.1.5] - 2023-02-05
 
 ### Changed
