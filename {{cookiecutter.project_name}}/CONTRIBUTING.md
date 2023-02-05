@@ -1,20 +1,20 @@
 # Contributor Guide
 
 Thank you for your interest in improving this project.
-This project is open-source under the [{{cookiecutter.open_source_license.replace("-", " ")}} license] and
+This project is open-source under the [{{cookiecutter.open_source_license.replace("-", " ")}} license][License] and
 welcomes contributions in the form of bug reports, feature requests, and pull requests.
 
 Here is a list of important resources for contributors:
 
-- [Code of Conduct]
-- [License]
-- [Source Code]
-- [Documentation]
-- [Issue Tracker]
+- [Code of Conduct][Code of Conduct]
+- [License][License]
+- [Source Code][Source Code]
+- [Documentation][Documentation]
+- [Issue Tracker][Issue Tracker]
 
 ## How to report a bug
 
-Report bugs on the [Issue Tracker].
+Report bugs on the [Issue Tracker][Issue Tracker].
 
 When filing an issue, make sure to answer these questions:
 
@@ -29,7 +29,7 @@ and/or steps to reproduce the issue.
 
 ## How to request a feature
 
-Request features on the [Issue Tracker].
+Request features on the [Issue Tracker][Issue Tracker].
 
 ## How to set up your development environment
 
@@ -72,13 +72,13 @@ $ pytest
 
 
 Unit tests are located in the _tests_ directory,
-and are written using the [pytest] testing framework.
+and are written using the [pytest][pytest] testing framework.
 
 [pytest]: https://pytest.readthedocs.io/
 
 ## How to submit changes
 
-Open a [pull request] to submit changes to this project.
+Open a [pull request][pull request] to submit changes to this project.
 
 Your pull request needs to meet the following guidelines for acceptance:
 
@@ -108,8 +108,4 @@ This will allow a chance to talk it over with the owners and validate your appro
 [Source Code]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}
 [Documentation]: https://{{cookiecutter.project_name}}.readthedocs.io/
 [Issue Tracker]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/issues
-
-
-<!-- github-only -->
-
 [Code of Conduct]: CODE_OF_CONDUCT.md
