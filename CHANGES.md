@@ -5,6 +5,7 @@
 ### Fixed 
 
 + Add missing reference to file issues.
++ make utils.py module pylint compatible.
 
 ## [0.1.5] - 2023-02-05
 
