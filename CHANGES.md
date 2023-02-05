@@ -1,4 +1,10 @@
-# Changelog
+# cookiecutter-brightwaylib Changelog
+
+## [0.1.5] - 2023-02-05
+
+### Changed
+
++ CHANGELOG.md -> CHANGES.md in project and in template to match the brightway documentation.
 
 ## [0.1.4] - 2022-12-22
 
