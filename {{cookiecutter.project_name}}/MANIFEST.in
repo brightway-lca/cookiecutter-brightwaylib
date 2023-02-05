@@ -1,1 +1,1 @@
-include {{ cookiecutter.package_name }}/VERSION
+include ./{{ cookiecutter.package_name }}/VERSION
