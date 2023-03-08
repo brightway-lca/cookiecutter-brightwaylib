@@ -55,6 +55,12 @@ You can also consider [uploading to testpypi](https://packaging.python.org/en/la
 
 # Requirements
 
+## pre-commit
+
+Follow the instructions at the [pre-commit website](https://pre-commit.com/).
+
+In our pre-commit configuration, we run pylint, and this needs to be installed locally as its Github repo doesn't play nicely with pre-commit.
+
 ## Secrets for publishing
 The github actions to publish to test.pypi.org and pypi.org require the creation of the following 2 secrets:
 
