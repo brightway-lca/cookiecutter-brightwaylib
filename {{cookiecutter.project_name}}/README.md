@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/pypi/l/{{cookiecutter.project_name}})][license]
 
 [![Read the documentation at https://{{cookiecutter.project_name}}.readthedocs.io/](https://img.shields.io/readthedocs/{{cookiecutter.project_name}}/latest.svg?label=Read%20the%20Docs)][read the docs]
-[![Tests](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/workflows/Tests/badge.svg)][tests]
+[![Tests](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/actions/workflows/python-test.yml/badge.svg)][tests]
 [![Codecov](https://codecov.io/gh/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/branch/main/graph/badge.svg)][codecov]
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
@@ -30,21 +30,22 @@ $ pip install {{cookiecutter.package_name}}
 ## Contributing
 
 Contributions are very welcome.
-To learn more, see the [Contributor Guide].
+To learn more, see the [Contributor Guide][Contributor Guide].
 
 ## License
 
-Distributed under the terms of the [{{cookiecutter.open_source_license.replace("-", " ")}} license][license],
+Distributed under the terms of the [{{cookiecutter.open_source_license.replace("-", " ")}} license][License],
 _{{cookiecutter.package_name}}_ is free and open source software.
 
 ## Issues
 
 If you encounter any problems,
-please [file an issue] along with a detailed description.
+please [file an issue][Issue Tracker] along with a detailed description.
 
 
 <!-- github-only -->
 
 [command-line reference]: https://{{cookiecutter.project_name}}.readthedocs.io/en/latest/usage.html
-[license]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/blob/main/LICENSE
-[contributor guide]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/blob/main/CONTRIBUTING.md
+[License]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/blob/main/LICENSE
+[Contributor Guide]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/blob/main/CONTRIBUTING.md
+[Issue Tracker]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/issues
