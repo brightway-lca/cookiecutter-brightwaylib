@@ -47,7 +47,7 @@ You can also consider [uploading to testpypi](https://packaging.python.org/en/la
         + py-version: ["3.8", "3.9", "3.10", "3.11"]
     + build source and wheel distribution packages using [build as backend](https://packaging.python.org/en/latest/key_projects/#build)
     + upload to `test.pypi.org` on push events to the `develop` branch
-    + upload to `pypi.org` on **tagged** push events to the `main` branch. The version **does not** depend on the tag.
+    + upload to `pypi.org` on tagged push events to the `main` branch whose tag starts with **the letter `v`**, e.g. `v1.0`. The version **does not** depend on the tag, it is taken from the `VERSION` file.
 + pytest
 + source folder is at the root of the project, and **not** under `src` !
 + `pyproject.toml` used for **configuring the build system only**
