@@ -27,7 +27,6 @@ You will need to answer questions regarding:
 
 + A one-sentence project description
 + Version string (default 0.1.0)
-+ Whether or not you want to use [click](https://click.palletsprojects.com/en/8.1.x/) for CLI (default yes)
 + Which license to use (default MIT)
 
 ## Uploading your package
