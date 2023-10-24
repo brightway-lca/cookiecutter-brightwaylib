@@ -5,4 +5,4 @@ __all__ = (
     # Add functions and variables you want exposed in `{{cookiecutter.package_name}}.` namespace here
 )
 
-__version__ = "0.0.1"
+__version__ = {{cookiecutter.version}}
