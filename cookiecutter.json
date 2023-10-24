@@ -5,9 +5,8 @@
   "project_name": "<your project library name>",
   "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "Contains all the python boilerplate you need to create a Brightway ecosystem package.",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "use_pytest": "y",
-  "command_line_interface": ["Click", "No command-line interface"],
   "open_source_license": [
     "MIT",
     "Apache-2.0",

@@ -26,8 +26,7 @@ cookiecutter cookiecutter-brightwaylib/
 You will need to answer questions regarding:
 
 + A one-sentence project description
-+ Version string (default 0.1.0)
-+ Whether or not you want to use [click](https://click.palletsprojects.com/en/8.1.x/) for CLI (default yes)
++ Version string (default 0.0.1)
 + Which license to use (default MIT)
 
 ## Uploading your package
@@ -44,14 +43,13 @@ You can also consider [uploading to testpypi](https://packaging.python.org/en/la
 + github actions:
     + test `main` and `develop` on push and on pull requests to this branches on the following:
         + os: [ubuntu-latest, windows-latest, macos-latest]
-        + py-version: ["3.8", "3.9", "3.10", "3.11"]
+        + py-version: ["3.9", "3.10", "3.11", "3.12"]
     + build source and wheel distribution packages using [build as backend](https://packaging.python.org/en/latest/key_projects/#build)
     + upload to `test.pypi.org` on push events to the `develop` branch
-    + upload to `pypi.org` on tagged push events to the `main` branch whose tag starts with **the letter `v`**, e.g. `v1.0`. The version **does not** depend on the tag, it is taken from the `VERSION` file.
+    + upload to `pypi.org` on tagged push events to the `main` branch whose tag starts with **the letter `v`**, e.g. `v1.0`. The version **does not** depend on the tag, it is taken from the `package_name.__version__` variable.
 + pytest
 + source folder is at the root of the project, and **not** under `src` !
-+ `pyproject.toml` used for **configuring the build system only**
-+ `setup.cfg` contains the configuration of the package (name, install_requires, metadata)
++ `pyproject.toml` used for **everything**
 
 # Requirements
 
