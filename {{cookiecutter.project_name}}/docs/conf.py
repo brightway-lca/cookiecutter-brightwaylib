@@ -43,6 +43,6 @@ source_suffix = {
 autodoc_typehints = "description"
 html_theme = "furo"
 
-needs_sphinx = "5.0"
+needs_sphinx = "7.2.6"
 
 version = importlib.metadata.version("{{ cookiecutter.package_name }}")
