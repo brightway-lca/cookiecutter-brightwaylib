@@ -28,6 +28,12 @@ repos:
 #       --remove-unused-variables,
 #     ]
 
+# https://github.com/PyCQA/flake8/issues/234
+- repo: https://github.com/john-hen/Flake8-pyproject
+  rev: 1.2.1
+  hooks:
+    - id: Flake8-pyproject
+
 - repo: https://github.com/pycqa/isort
   rev: 5.11.5
   hooks:
@@ -51,9 +57,10 @@ repos:
   rev: 6.0.0
   hooks:
   - id: flake8
-
-  ## You can add flake8 plugins via `additional_dependencies`:
+    additional_dependencies: [Flake8-pyproject]
+  # You can add flake8 plugins via `additional_dependencies`:
   #  additional_dependencies: [flake8-bugbear]
+
 - repo: local
   hooks:
     - id: pylint
