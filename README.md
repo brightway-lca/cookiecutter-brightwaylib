@@ -2,32 +2,38 @@
 
 A [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/index.html) based project template for Brightway ecosystem packages.
 
-# [Usage](https://cookiecutter.readthedocs.io/en/stable/usage.html)
+We prefer using `cruft` as tooling to create/check/update projects created with the template over direct cookiecutter because of the following features of [cruft](https://cruft.github.io/cruft/):
+
++ it is actively maintained
++ it allows to check if the project is up to date with the template
++ it allows to update the project, based on changes on the template
+
+# [Usage](https://cruft.github.io/cruft/)
 
 ## Installation
 
-1. Create a new environment (pip or conda), activate it, and install `cookiecutter`
-2. Download (i.e. don't install via pip or conda) this repository, either directly or via git
-3. Edit the `cookiecutter.json` file to give your personal info. You should update at least:
-
+1. Create a new environment (pip or conda), activate it, and install `cruft`
+2. create a project with:
+```
+cruft https://github.com/brightway-lca/cookiecutter-brightwaylib
+```
+You will be asked for the following information:
 * "full_name"
 * "email"
 * "project_name". This will be the github repo and pypi name. Should not include dashes or spaces.
 * "github_username" if not intended for submission to `https://github.com/brightway-lca/`
-
-## Creating a new package
-
-1. Invoke cookiecutter *in the parent directory of `cookiecutter-brightwaylib`*
-
-```
-cookiecutter cookiecutter-brightwaylib/
-```
-
-You will need to answer questions regarding:
-
 + A one-sentence project description
 + Version string (default 0.0.1)
 + Which license to use (default MIT)
+
+## Updating the project
+
+If the cookiecutter template is updated, you can upgrade your project with:
+
+```
+cruft update
+```
+inside the repository of the project. See [cruft documentation](https://cruft.github.io/cruft/#updating-a-project) for more on this.
 
 ## Uploading your package
 
