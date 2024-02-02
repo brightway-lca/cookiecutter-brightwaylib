@@ -12,11 +12,14 @@ We prefer using `cruft` as tooling to create/check/update projects created with 
 
 ## Installation
 
-1. Create a new environment (pip or conda), activate it, and install `cruft`
-2. create a project with:
+1. Create a new environment (pip, conda, mamba, choose your 💊),
+2. Activate the newly created envionrment and install `cruft` ( `mamba install cruft` for example)
+3. Create a project with:
+
 ```
-cruft https://github.com/brightway-lca/cookiecutter-brightwaylib
+cruft create https://github.com/brightway-lca/cookiecutter-brightwaylib
 ```
+
 You will be asked for the following information:
 * "full_name"
 * "email"
