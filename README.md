@@ -36,6 +36,7 @@ If the cookiecutter template is updated, you can upgrade your project with:
 ```
 cruft update
 ```
+
 inside the repository of the project. See [cruft documentation](https://cruft.github.io/cruft/#updating-a-project) for more on this.
 
 ## Uploading your package
@@ -66,7 +67,10 @@ You can also consider [uploading to testpypi](https://packaging.python.org/en/la
 
 Follow the instructions at the [pre-commit website](https://pre-commit.com/).
 
+### Install pylint locally
+
 In our pre-commit configuration, we run pylint, and this needs to be installed locally as its Github repo doesn't play nicely with pre-commit.
+Follow the instructions at the [pylint website](https://pylint.readthedocs.io/en/latest/user_guide/installation/index.html)
 
 ## Secrets for publishing
 The github actions to publish to test.pypi.org and pypi.org require the creation of the following 2 secrets:
