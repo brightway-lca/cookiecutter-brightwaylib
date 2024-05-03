@@ -1,5 +1,12 @@
 # cookiecutter-brightwaylib Changelog
 
+## [0.2.0] - 2023-02-05
+
+### Changed
+
++ Use `pyproject.toml` instead of `setup.cfg`
++ support python 3.12, and remove 3.8
+
 ## [0.1.5] - 2023-02-05
 
 ### Changed
