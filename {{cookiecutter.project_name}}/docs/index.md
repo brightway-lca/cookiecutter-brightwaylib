@@ -11,7 +11,9 @@
 hidden:
 maxdepth: 1
 ---
+self
 content/usage
+content/api/index
 content/codeofconduct
 content/contributing
 content/license
