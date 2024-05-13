@@ -1,4 +1,4 @@
-# {{cookiecutter.package_name}} Changelog
+# `{{cookiecutter.package_name}}` Changelog
 
 All notable changes to this project will be documented in this file.
 
