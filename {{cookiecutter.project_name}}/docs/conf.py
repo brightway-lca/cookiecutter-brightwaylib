@@ -1,3 +1,7 @@
+# conf.py
+# Sphinx configuration file
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
+
 ### import setup ##################################################################################
 
 import datetime

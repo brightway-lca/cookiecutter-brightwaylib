@@ -109,8 +109,3 @@ This will allow a chance to talk it over with the owners and validate your appro
 
 [pytest]: https://pytest.readthedocs.io/
 [pull request]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/pulls
-
-
-<!-- github-only -->
-
-[Code of Conduct]: CODE_OF_CONDUCT.md
