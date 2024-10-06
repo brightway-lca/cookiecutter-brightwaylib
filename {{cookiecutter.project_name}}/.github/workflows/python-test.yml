@@ -9,30 +9,35 @@ name: Python 🐍 CI/CD tests
 on:
   push:
     branches: [main, develop]
-    paths-ignore: # prevents workflow execution when only these types of files are modified
-      - "**.md" # wildcards prevent file in any repo dir from trigering workflow
+    paths-ignore:  # prevents workflow execution when only these types of files are modified
+      - "**.md"  # wildcards prevent file in any repo dir from trigering workflow
       - "**.bib"
-      - "**.ya?ml" # captures both .yml and .yaml
+      - "**.ya?ml"  # captures both .yml and .yaml
       - "LICENSE"
       - ".gitignore"
   pull_request:
     branches: [main, develop]
-    types: [opened, reopened] # excludes syncronize to avoid redundant trigger from commits on PRs
+    types: [opened, reopened]  # excludes syncronize to avoid redundant trigger from commits on PRs
     paths-ignore:
       - "**.md"
       - "**.bib"
       - "**.ya?ml"
       - "LICENSE"
       - ".gitignore"
-  workflow_dispatch: # also allow manual trigger, for testing purposes
+  workflow_dispatch:  # also allow manual trigger, for testing purposes
 
 jobs:
-  build:
+  testing:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-13, ubuntu-20.04, macos-latest, windows-2019]
+        os: [ubuntu-latest,  # 24.04
+             windows-latest,  # 2022
+             macos-latest,  # 14
+             ubuntu-22.04,
+             windows-2019,
+             macos-13]
         py-version: ["3.9", "3.10", "3.11", "3.12"]
 
     steps:
