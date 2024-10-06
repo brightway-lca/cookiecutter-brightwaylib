@@ -39,14 +39,68 @@ cruft update
 
 inside the repository of the project. See [cruft documentation](https://cruft.github.io/cruft/#updating-a-project) for more on this.
 
-## Uploading your package
+## Building the target package
+
+The template provides enough information to build a `PyPI` and `conda` package, under the `pyproject.toml` and `conda.recipe/meta.yaml` files.
+
+### PyPI
+
+Make sure you have "build" installed, and then you can build the package with:
+
+```
+python -m build --outdir dist/ .
+```
+
+### Conda
+
+Make sure you have `conda-build` installed, and then you can build the package with:
+
+```
+conda config --set anaconda_upload no
+conda build -c conda-forge conda.recipe .
+```
+
+The previous snippet disables automatic uploading to anaconda. You can see the publishing/uploading part below.
+
+## Publising/Uploading your package
+
+The template includes github actions to automatically publish/upload the packages to `PyPI` and `anaconda.org`, but you can find below the instructions to do it manually as well.
+
+### PyPI
+#### PyPI - through github actions
+
+The repository is configured to do the publishing/uploading automatically on `develop` and `main` branches.
+You have to enable [trusted publishing](https://docs.pypi.org/trusted-publishers/) from your PyPI account for this to work.
+**Hint**: the publisher is the `python-package-deploy.yml`.
+
+#### PyPI - manually
+
+If you prefer to deactivate the automatic github actions, here is how to publish/upload.
 
 1. Install `build` and `twine` in your current or a new environment
-2. Configure `twine` with you [pypi username and password](https://twine.readthedocs.io/en/stable/#configuration) with your [pypi API token](https://pypi.org/help/#apitoken).
+2. Configure `twine` with you [pypi username and password](https://twine.readthedocs.io/en/stable/#configuration) and with your [pypi API token](https://pypi.org/help/#apitoken).
 3. Run `python -m build` 
 4. Run `twine upload dist/*`
 
-You can also consider [uploading to testpypi](https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-the-distribution-archives) first.
+You can also consider [uploading to testpypi](https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-the-distribution-archives) first to test that the process works fine.
+
+
+### Conda
+#### Conda - through github actions
+
+The repository is configured to do the publishing/uploading automatically on `develop` and `main` branches.
+You must add 2 secrets to your repository: 
+
++ `ANACONDA_USER`
++ `ANACONDA_PASSWORD`
+
+#### Conda - manually
+
+1. Install `conda-build` and `anaconda-client` in your current or a new environment
+2. Use `anaconda` to login to anaconda.org (see [anaconda documentation](https://docs.anaconda.com/anacondaorg/user-guide/getting-started-with-anaconda-client/) 
+3. `conda config --set anaconda_upload yes`
+4. Build and upload the package with: `conda build -c conda-forge conda.recipe .`
+
 
 # Features
 
@@ -71,13 +125,3 @@ Follow the instructions at the [pre-commit website](https://pre-commit.com/).
 
 In our pre-commit configuration, we run pylint, and this needs to be installed locally as its Github repo doesn't play nicely with pre-commit.
 Follow the instructions at the [pylint website](https://pylint.readthedocs.io/en/latest/user_guide/installation/index.html)
-
-## Secrets for publishing
-The github actions to publish to test.pypi.org and pypi.org require the creation of the following 2 secrets:
-
-+ `TEST_PYPI_API_TOKEN`
-+ `PYPI_API_TOKEN`
-
-No username is necessary because the github action uses the new `__token__` based approach.
-The previous secrets are the tokens generated through the test.pypi.org and pypi.org sites.
-See [uploading distribution archives](https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-the-distribution-archives) for more information.
