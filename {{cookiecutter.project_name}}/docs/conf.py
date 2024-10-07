@@ -22,6 +22,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.intersphinx',
     'sphinx.ext.extlinks',
+    'sphinx.ext.napoleon',
     # theme
     'sphinx_rtd_theme',
     # Markdown support
@@ -33,6 +34,8 @@ extensions = [
     # copy button on code blocks
     "sphinx_copybutton",
 ]
+
+napoleon_numpy_docstring = True
 
 exclude_patterns = ['_build']
 
