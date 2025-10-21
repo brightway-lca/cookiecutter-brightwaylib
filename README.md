@@ -71,7 +71,9 @@ The template includes github actions to automatically publish/upload the package
 
 The repository is configured to do the publishing/uploading automatically on `develop` and `main` branches.
 You have to enable [trusted publishing](https://docs.pypi.org/trusted-publishers/) from your PyPI account for this to work.
-**Hint**: the publisher is the `python-package-deploy.yml`.
+**Hint**: the publisher is the `python-package-deploy.yml`. 
+
+**If you're creating a full new project**, the instructions on how to create a new project on PyPI and adding trusted publishing are [here](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/).
 
 #### PyPI - manually
 
