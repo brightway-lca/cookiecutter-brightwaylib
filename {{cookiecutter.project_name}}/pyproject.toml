@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68.0"]
+requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -57,8 +57,9 @@ dev = [
     "setuptools",
 ]
 
-[tool.setuptools]
 license-files = ["LICENSE"]
+
+[tool.setuptools]
 include-package-data = true
 packages = ["{{cookiecutter.package_name}}"]
 

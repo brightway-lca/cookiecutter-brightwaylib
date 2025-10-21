@@ -1,5 +1,15 @@
 # cookiecutter-brightwaylib Changelog
 
+## [0.3.0] - 2025-10-21
+
+### Changes
+
++ use setuptools >= 77
+
+### Fixed
+
++ use license-files outside of setuptools section in pyproject.toml
+
 ## [0.2.0] - 2023-02-05
 
 ### Changed
