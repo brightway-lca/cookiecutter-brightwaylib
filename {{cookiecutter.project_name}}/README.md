@@ -10,14 +10,14 @@
 [![Codecov](https://codecov.io/gh/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/branch/main/graph/badge.svg)][codecov]
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
-[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)][ruff]
 
-[pypi status]: https://pypi.org/project/{{cookiecutter.project_name}}/
-[read the docs]: https://{{cookiecutter.project_name}}.readthedocs.io/
-[tests]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/actions?workflow=Tests
-[codecov]: https://app.codecov.io/gh/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}
+[pypi status]: https://pypi.org/project/bw_soca_importer/
+[read the docs]: https://bw_soca_importer.readthedocs.io/
+[tests]: https://git.list.lu/bw2tools/bw_soca_importer/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/bw2tools/bw_soca_importer
 [pre-commit]: https://github.com/pre-commit/pre-commit
-[black]: https://github.com/psf/black
+[ruff]: https://github.com/astral-sh/ruff 
 
 ## Installation
 
