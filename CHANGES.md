@@ -1,5 +1,11 @@
 # cookiecutter-brightwaylib Changelog
 
+## [Unreleased] - 2025-10-21
+
+### Changes
+
++ use ruff as the only formatter/linter
+
 ## [0.3.0] - 2025-10-21
 
 ### Changes

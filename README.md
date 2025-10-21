@@ -121,7 +121,4 @@ You must add 2 secrets to your repository:
 
 Follow the instructions at the [pre-commit website](https://pre-commit.com/).
 
-### Install pylint locally
-
-In our pre-commit configuration, we run pylint, and this needs to be installed locally as its Github repo doesn't play nicely with pre-commit.
-Follow the instructions at the [pylint website](https://pylint.readthedocs.io/en/latest/user_guide/installation/index.html)
++ The project created with this cookiecutter template uses [ruff](https://docs.astral.sh/ruff/) as the only linter/formatter.
