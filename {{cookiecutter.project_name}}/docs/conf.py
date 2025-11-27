@@ -56,7 +56,7 @@ html_show_sphinx = False
 
 html_theme_options = {
     'logo_only': False,
-    'display_version': True,
+    'version_selector': True,
     'prev_next_buttons_location': 'bottom',
     # Toc options
     'collapse_navigation': True,
