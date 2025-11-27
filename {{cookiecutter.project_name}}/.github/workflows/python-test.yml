@@ -33,11 +33,12 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest,  # 24.04
-             windows-latest,  # 2022
-             macos-latest,  # 14
+             windows-latest,  # 2025
+             macos-latest,  # 15
+             macos-14,
              ubuntu-22.04,
-             windows-2019,
-             macos-13]
+             windows-2022]
+        py-version: ["3.10", "3.11", "3.12", "3.13", "3.14"]
         py-version: ["3.9", "3.10", "3.11", "3.12"]
 
     steps:
