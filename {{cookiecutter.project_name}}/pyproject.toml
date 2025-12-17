@@ -12,6 +12,7 @@ maintainers = [
 ]
 description = "{{cookiecutter.project_short_description}}"
 readme = "README.md"
+license-files = ["LICENSE"]
 dynamic = ["version"]
 # Add here all kinds of additional classifiers as defined under
 # https://pypi.org/classifiers/
@@ -57,7 +58,6 @@ dev = [
     "setuptools",
 ]
 
-license-files = ["LICENSE"]
 
 [tool.setuptools]
 include-package-data = true
