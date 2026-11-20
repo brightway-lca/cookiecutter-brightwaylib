@@ -1,5 +1,11 @@
 # cookiecutter-brightwaylib Changelog
 
+## [Unreleased]
+
+### Changed
+
++ support python 3.13, 3.14, and 3.15, and remove 3.9 and 3.10
+
 ## [0.3.0] - 2025-10-21
 
 ### Changes

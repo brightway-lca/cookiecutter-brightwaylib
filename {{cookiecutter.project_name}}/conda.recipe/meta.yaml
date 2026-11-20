@@ -20,7 +20,7 @@ requirements:
                 - python
                 - setuptools
         run:
-                - python >=3.9
+                - python >=3.11
 
 about:
         home: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}
