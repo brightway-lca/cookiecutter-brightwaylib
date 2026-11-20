@@ -6,6 +6,16 @@
 
 + support python 3.13, 3.14, and 3.15, and remove 3.9 and 3.10
 
+## [0.3.0] - 2025-10-21
+
+### Changes
+
++ use setuptools >= 77
+
+### Fixed
+
++ use license-files outside of setuptools section in pyproject.toml
+
 ## [0.2.0] - 2023-02-05
 
 ### Changed

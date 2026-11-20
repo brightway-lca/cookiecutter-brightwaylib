@@ -78,8 +78,6 @@ $ pytest
 Unit tests are located in the _tests_ directory,
 and are written using the [pytest][pytest] testing framework.
 
-[pytest]: https://pytest.readthedocs.io/
-
 ## How to submit changes
 
 Open a [pull request] to submit changes to this project.
