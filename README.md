@@ -53,7 +53,7 @@ You can also consider [uploading to testpypi](https://packaging.python.org/en/la
 + github actions:
     + test `main` and `develop` on push and on pull requests to this branches on the following:
         + os: [ubuntu-latest, windows-latest, macos-latest]
-        + py-version: ["3.9", "3.10", "3.11", "3.12"]
+        + py-version: ["3.11", "3.12", "3.13", "3.14", "3.15"]
     + build source and wheel distribution packages using [build as backend](https://packaging.python.org/en/latest/key_projects/#build)
     + upload to `test.pypi.org` on push events to the `develop` branch
     + upload to `pypi.org` on tagged push events to the `main` branch whose tag starts with **the letter `v`**, e.g. `v1.0`. The version **does not** depend on the tag, it is taken from the `package_name.__version__` variable.
